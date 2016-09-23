@@ -16,7 +16,8 @@
     "eslint-all": "node ./node_modules/eslint/bin/eslint.js --fix .",
     "deploy-staging": "./node_modules/.bin/fly deploy:staging",
     "clean-deploy-staging": "./node_modules/.bin/fly clean-deploy:staging",
-    "start-staging": "./node_modules/.bin/fly start:staging"
+    "start-staging": "./node_modules/.bin/fly start:staging",
+    "print-log-staging": "./node_modules/.bin/fly print-log:staging"
   },
   "babel": {
     "presets": [

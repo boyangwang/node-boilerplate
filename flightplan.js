@@ -22,3 +22,6 @@ plan.remote(['clean-deploy', 'deploy'], (remote) => {
 plan.remote(['clean-deploy', 'deploy', 'start'], (remote) => {
     remote.sudo(`npm --prefix ${gitDir} start`);
 });
+plan.remote(['print-log'], (remote) => {
+    remote.sudo(`cd ${gitDir} && cat ./*.log /root/.forever/${packageJson.name}.log`);
+});
