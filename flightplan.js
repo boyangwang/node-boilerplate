@@ -13,7 +13,7 @@ plan.remote(['clean-deploy', 'deploy', 'start'], (remote) => {
 });
 plan.remote(['clean-deploy'], (remote) => {
     remote.rm(`-rf -- ${gitDir}`);
-    remote.sudo('cd /var/www && git clone ${packageJson.repository.url}');
+    remote.sudo(`cd /var/www && git clone ${packageJson.repository.url}`);
 });
 plan.remote(['clean-deploy', 'deploy'], (remote) => {
     remote.sudo(`cd ${gitDir} && git pull origin master`);
