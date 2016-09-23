@@ -1,5 +1,5 @@
 const plan = require('flightplan');
-const package = require('./package.json');
+const packageJson = require('./package.json');
 
 plan.target('staging', {
     host: 'playground.wangboyang.com',
@@ -7,13 +7,13 @@ plan.target('staging', {
     username: 'root',
     privateKey: 'C:\\Users\\wangb\\.ssh\\id_rsa',
 });
-const gitDir = `/var/www/${package.name}`;
+const gitDir = `/var/www/${packageJson.name}`;
 plan.remote(['clean-deploy', 'deploy', 'start'], (remote) => {
     remote.sudo(`npm --prefix ${gitDir} stop`, { failsafe: true });
 });
 plan.remote(['clean-deploy'], (remote) => {
     remote.rm(`-rf -- ${gitDir}`);
-    remote.sudo('cd /var/www && git clone ${package.repository.url}');
+    remote.sudo('cd /var/www && git clone ${packageJson.repository.url}');
 });
 plan.remote(['clean-deploy', 'deploy'], (remote) => {
     remote.sudo(`cd ${gitDir} && git pull origin master`);
