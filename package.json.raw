@@ -1,12 +1,12 @@
 {
-  // "name": "viperjs",
+  // "name": "node-boilerplate",
   "version": "0.0.0",
   "description": "",
   "main": "server/app.js",
   "scripts": {
     "full-build": "npm install && npm run webpack && npm run eslint-all && npm test",
-    // "start": "forever start -c 'node --use-strict' -a -l ./viperjs.log -o ./viperjs.log -e ./viperjs.log --uid viperjs server/app.js",
-    // "stop": "forever stop viperjs || true",
+    // "start": "forever start -c 'node --use-strict' -a -l ./node-boilerplate.log -o ./node-boilerplate.log -e ./node-boilerplate.log --uid node-boilerplate server/app.js",
+    // "stop": "forever stop node-boilerplate || true",
     "mocha": "node ./node_modules/mocha/bin/mocha --compilers js:babel-core/register",
     "casper": "npm start && sleep 2 && python ./node_modules/casperjs/bin/casperjs test ./test/casper/tests.js && sleep 20 && npm stop",
     "test": "npm run mocha && npm run casper",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    // "url": "git+https://github.com/boyangwang/viperjs.git"
+    // "url": "git@github.com:boyangwang/node-boilerplate.git"
   },
   "author": "boyang",
   "contributors": [
@@ -37,9 +37,9 @@
   ],
   "license": "CC-BY-NC-4.0",
   "bugs": {
-    // "url": "https://github.com/boyangwang/viperjs/issues"
+    // "url": "https://github.com/boyangwang/node-boilerplate/issues"
   },
-  // "homepage": "https://github.com/boyangwang/viperjs#readme",
+  // "homepage": "https://github.com/boyangwang/node-boilerplate#readme",
   "dependencies": {
     "babel-polyfill": "^6.13.0",
     "babel-register": "^6.14.0",
