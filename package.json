@@ -27,10 +27,6 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:boyangwang/node-boilerplate.git"
-  },
   "author": "boyang",
   "contributors": [
     "boyang"
@@ -75,5 +71,8 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2"
+  },
+  "directories": {
+    "test": "test"
   }
 }
