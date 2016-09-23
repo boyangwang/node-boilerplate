@@ -73,6 +73,11 @@
     "webpack": "^1.13.2"
   },
   "directories": {
+    "doc": "doc",
     "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boyangwang/node-boilerplate.git"
   }
 }
