@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const config = require('./config.js');
+const logger = require('winston');
 const packageJson = require('../package.json');
 
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -13,4 +14,4 @@ app.get('/js/babel-polyfill.min.js', (req, res) => {
 app.use((req, res) => {
     res.status(404).contentType('text/plain').send('Not found');
 });
-app.server = app.listen(config.port, () => console.log(`${packageJson.name} server listening on ${config.port}...`));
+app.server = app.listen(config.port, () => logger.info(`${packageJson.name} server listening on ${config.port}...`));
