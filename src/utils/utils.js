@@ -186,13 +186,13 @@ export function isAntdPro() {
 
 /* eslint-disable no-console */
 export const log = (...args) => {
-  console.info(`%cChat.Chat%c ${new Date().toISOString()} | `, 'color: #4E4E4E; font-weight: bold; background-color: #4376B0', '', ...args);
+  console.info(`%cArmageddon%c ${new Date().toISOString()} | `, 'color: #4E4E4E; font-weight: bold; background-color: #4376B0', '', ...args);
 };
 
 export const logTitle = (...args) => {
-  window.ChatChat = window.ChatChat || {};
-  window.ChatChat.VERSION = packageJson.version;
-  console.info(`%cChat.Chat ${packageJson.version}%c`, 'font-size: 20px; color: #4E4E4E; font-weight: bold; background-color: #4376B0', '', ...args);
+  window.Armageddon = window.Armageddon || {};
+  window.Armageddon.VERSION = packageJson.version;
+  console.info(`%cArmageddon ${packageJson.version}%c`, 'font-size: 20px; color: #4E4E4E; font-weight: bold; background-color: #4376B0', '', ...args);
 };
 
 logTitle();

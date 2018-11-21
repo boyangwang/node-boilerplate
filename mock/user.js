@@ -6,9 +6,9 @@ export default {
     avatar: 'https://diary.sgp1.digitaloceanspaces.com/rob-avatar.png',
     userid: '00000001',
     email: 'antdesign@alipay.com',
-    signature: 'Chat.Chat',
+    signature: 'Armageddon',
     title: 'CEO',
-    group: 'Chat.Chat－某某某事业群－某某平台部－某某技术部－产品',
+    group: 'Armageddon－某某某事业群－某某平台部－某某技术部－产品',
     tags: [
       {
         key: '0',

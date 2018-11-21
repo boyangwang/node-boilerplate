@@ -27,7 +27,7 @@ const links = [
 
 const copyright = (
   <Fragment>
-    Chat.Chat
+    Armageddon
   </Fragment>
 );
 
@@ -36,9 +36,9 @@ class UserLayout extends React.PureComponent {
   // getPageTitle() {
   //   const { routerData, location } = this.props;
   //   const { pathname } = location;
-  //   let title = 'Chat.Chat';
+  //   let title = 'Armageddon';
   //   if (routerData[pathname] && routerData[pathname].name) {
-  //     title = `${routerData[pathname].name} - Chat.Chat`;
+  //     title = `${routerData[pathname].name} - Armageddon`;
   //   }
   //   return title;
   // }

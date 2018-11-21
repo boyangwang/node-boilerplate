@@ -28,7 +28,7 @@ const FooterView = () => (
       ]}
       copyright={
         <Fragment>
-          Chat.Chat
+          Armageddon
         </Fragment>
       }
     />

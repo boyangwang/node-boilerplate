@@ -9,7 +9,7 @@ describe('Homepage', () => {
     await page.goto(BASE_URL, { waitUntil: 'networkidle2' });
     await page.waitForSelector('#logo h1');
     const text = await page.evaluate(() => document.body.innerHTML);
-    expect(text).toContain('<h1>Chat.Chat</h1>');
+    expect(text).toContain('<h1>Armageddon</h1>');
     await page.close();
     browser.close();
   });
